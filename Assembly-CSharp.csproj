@@ -61,10 +61,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\CubeScript.cs" />
-    <Compile Include="Assets\Scripts\MazePainter.cs" />
-    <Compile Include="Assets\Scripts\WinTrigger.cs" />
-    <Compile Include="Assets\Scripts\GameAdmin.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\GameAdmin.cs" />
+    <Compile Include="Assets\Scripts\WinTrigger.cs" />
+    <Compile Include="Assets\Scripts\MazePainter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
