@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -52,6 +53,12 @@ using UnityEngine;
         }
         private bool IsGrounded(){
             return Physics.Raycast(transform.position, Vector3.down, 1.1f);
+        }
+        private void OnCollisionEnter(Collision collision){
+            if(collision.gameObject.CompareTag("Enemy")){
+                Debug.Log("Perdiste. Reiniciando el juego...");
+                GameAdmin.Instance.RestartGame(0.5f);
+            }
         }
     }
 
